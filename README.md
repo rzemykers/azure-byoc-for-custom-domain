@@ -1,7 +1,7 @@
 ### Python script for update/set certificate (BYOC) in CDN custom domain by Azure REST API
 
 It's a simple script to use after importing certificate to KeyValut.
-Script requires Password and ApplictionID with permissions to list and get certificates in Your KeyValut. You should be aware that the same AppicationId should have permision to CDN endpoint (for example role [CDN Endpoint Contributor](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#cdn-endpoint-contributor). See [more](https://docs.microsoft.com/en-us/cli/azure/ad/sp?view=azure-cli-latest#az_ad_sp_create_for_rbac) at microsoft documentation.  
+Script requires Password and ApplictionID with permissions to list and get certificates in Your KeyValut. You should be aware that the same AppicationId should have permision to CDN endpoint (for example role [CDN Endpoint Contributor](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#cdn-endpoint-contributor)). See [more](https://docs.microsoft.com/en-us/cli/azure/ad/sp?view=azure-cli-latest#az_ad_sp_create_for_rbac) at microsoft documentation.  
 
 ####environment settings
 ```html
