@@ -20,9 +20,9 @@ export AZUREDNS_CLIENTSECRET="1b0224ef-34d4-5af9-110f-77f527d561bd"   # password
 It was tested with CDN Veriozon, python 2.7 and python 3.6 as renew-hook of [acme.sh](https://github.com/Neilpang/acme.sh/wiki/How-to-use-Azure-DNS) wildcard request (AZ CLI also required for renew-hook). 
 #####source of renew hook in acme.sh
 ```html
-/root/.acme.sh/acme.sh --toPkcs -d "mycustomdomain.com" -d "*.mycustomdomain.com" --password nice-password
+acme.sh --toPkcs -d "mycustomdomain.com" -d "*.mycustomdomain.com" --password nice-password
 az keyvault certificate import --file mycustomdomain.com.pfx --name cert-name-in-kv --vault-name Vault-Name --password nice-password
-/usr/local/bin/python3.6 /root/.acme.sh/mycustomdomain.com/start-byoc.py```
+python3.6 /root/.acme.sh/mycustomdomain.com/start-byoc.py```
 
 
 
